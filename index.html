@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Machine Learning Model Deployment</title>
+</head>
+<body>
+    <h1>Machine Learning Model Deployment</h1>
+    <form method="POST" action="/predict">
+        <label for="age">Age:</label>
+        <input type="number" name="age" required><br>
+
+        <label for="gender">Gender:</label>
+        <input type="text" name="gender" required><br>
+
+        <label for="location">Location:</label>
+        <input type="text" name="location" required><br>
+
+        <label for="subscription_months">Subscription Months:</label>
+        <input type="number" name="subscription_months" required><br>
+
+        <label for="monthly_bill">Monthly Bill:</label>
+        <input type="number" name="monthly_bill" step="0.01" required><br>
+
+        <label for="total_usage_gb">Total Usage (GB):</label>
+        <input type="number" name="total_usage_gb" step="0.01" required><br>
+
+        <label for="customer_id">Customer ID:</label>
+        <input type="number" name="customer_id" required><br>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br>
+
+        <label for="churn">Churn (0 or 1):</label>
+        <input type="number" name="churn" required><br>
+        
+        <!-- New columns -->
+        <label for="subscription_length_years">Subscription Length (Years):</label>
+        <input type="number" name="subscription_length_years" step="0.01" required><br>
+
+        <label for="total_monthly_cost">Total Monthly Cost:</label>
+        <input type="number" name="total_monthly_cost" step="0.01" required><br>
+
+        <label for="monthly_usage_per_year">Monthly Usage Per Year (GB):</label>
+        <input type="number" name="monthly_usage_per_year" step="0.01" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
